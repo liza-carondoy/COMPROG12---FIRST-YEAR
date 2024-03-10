@@ -1,38 +1,52 @@
-/* NAME: Liza Carondoy
-  DATE: February 15, 2024
-  Activity: #5 */
+/* Name: Liza Carondoy
+   Midterm Activity #3 */
 
-public class StudentCarondoy {
-    private int idNumber;
-    private int creditHoursEarned;
-    private int pointsEarned;
-    private double gradePointAverage;
+class StudentCarondoy {
+    private String name;
+    private int numScores;
+    private int highestScore;
+    private int lowestScore;
+    private double averageScore;
 
-    public void setIdNumber(int idNumber) {
-        this.idNumber = idNumber;
+    // Constructor
+    public StudentCarondoy(String name) {
+        this.name = name;
     }
 
-    public void setCreditHoursEarned(int creditHoursEarned) {
-        this.creditHoursEarned = creditHoursEarned;
+    // Accessor methods (getters and setters)
+    public String getName() {
+        return name;
     }
 
-    public void setPointsEarned(int pointsEarned) {
-        this.pointsEarned = pointsEarned;
+    public void setNumScores(int numScores) {
+        this.numScores = numScores;
     }
 
-   //Method to compute the grade point average
-    public void computeGPA() {
-        if (creditHoursEarned != 0) {
-            gradePointAverage = (double) pointsEarned / creditHoursEarned; // To compute the grade point average field by dividing points with credit hours earned.
-        } else {
-            gradePointAverage = 0.0; // Handle division by zero
-        }
+    public void setHighestScore(int highestScore) {
+        this.highestScore = highestScore;
     }
 
-    public void displayStudentInfo() {
-        System.out.println("ID Number: " + idNumber);
-        System.out.println("Credit Hours Earned: " + creditHoursEarned);
-        System.out.println("Points Earned: " + pointsEarned);
-        System.out.println("Grade Point Average: " + gradePointAverage);
+    public void setLowestScore(int lowestScore) {
+        this.lowestScore = lowestScore;
+    }
+
+    public void setAverageScore(double averageScore) {
+        this.averageScore = averageScore;
+    }
+
+    public int getNumScores() {
+        return numScores;
+    }
+
+    public int getHighestScore() {
+        return highestScore;
+    }
+
+    public int getLowestScore() {
+        return lowestScore;
+    }
+
+    public double getAverageScore() {
+        return averageScore;
     }
 }
