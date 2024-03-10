@@ -1,7 +1,7 @@
 /* Name: Liza Carondoy
    Midterm Activity #3 */
 
-class StudentCarondoy {
+public class StudentCarondoy {
     private String name;
     private int numScores;
     private int highestScore;
